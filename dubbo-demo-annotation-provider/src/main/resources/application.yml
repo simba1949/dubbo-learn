@@ -1,0 +1,20 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: dubbo-demo-annotation-provider
+# dubbo 相关配置
+dubbo:
+  application:
+    name: ${spring.application.name}
+  # 注册中心
+  registry:
+    address: zookeeper://192.168.8.15
+    port: 2181
+    timeout: 10000
+  protocol:
+    name: dubbo
+    port: 20880
+  scan:
+    # 扫描dubbo注解，多个值使用英文逗号隔开
+    base-packages: top.simba1949.service.impl
