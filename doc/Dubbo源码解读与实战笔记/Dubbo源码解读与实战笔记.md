@@ -835,5 +835,7 @@ public class Application {
 
 ### 基于 API 配置
 
+不推荐，详情请参考 `dubbo-demo-api-consumer` 和 `dubbo-demo-api-provider` 模块代码
+
 
 
