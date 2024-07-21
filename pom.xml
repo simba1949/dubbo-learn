@@ -27,8 +27,8 @@
         <dubbo.version>3.2.14</dubbo.version>
         <!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo-spring-boot-starter -->
         <dubbo-spring-boot-starter.version>3.2.14</dubbo-spring-boot-starter.version>
-        <!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo-dependencies-zookeeper -->
-        <dubbo-dependencies-zookeeper.version>3.2.14</dubbo-dependencies-zookeeper.version>
+        <!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo-dependencies-zookeeper-curator5 -->
+        <dubbo-dependencies-zookeeper-curator5.version>3.2.14</dubbo-dependencies-zookeeper-curator5.version>
     </properties>
 
     <dependencies>
