@@ -21,6 +21,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!-- 版本管理 -->
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-parent -->
+        <spring-boot.version>3.3.2</spring-boot.version>
         <!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo -->
         <dubbo.version>3.2.14</dubbo.version>
         <!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo-spring-boot-starter -->
