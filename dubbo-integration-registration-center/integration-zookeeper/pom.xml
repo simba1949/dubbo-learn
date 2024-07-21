@@ -4,12 +4,18 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <artifactId>integration-zookeeper</artifactId>
+    <packaging>pom</packaging>
 
     <parent>
         <groupId>vip.openpark</groupId>
         <artifactId>dubbo-integration-registration-center</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+
+    <modules>
+        <module>zookeeper-provider</module>
+        <module>zookeeper-consumer</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

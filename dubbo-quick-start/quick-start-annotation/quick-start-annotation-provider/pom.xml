@@ -24,7 +24,7 @@
                 <!-- Import dependency management from Spring Boot -->
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>3.3.2</version>
+                <version>${spring-boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -41,13 +41,13 @@
         <dependency>
             <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo-spring-boot-starter</artifactId>
-            <version>3.2.14</version>
+            <version>${dubbo-spring-boot-starter.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo-dependencies-zookeeper-curator5 -->
         <dependency>
             <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo-dependencies-zookeeper-curator5</artifactId>
-            <version>3.2.14</version>
+            <version>${dubbo-dependencies-zookeeper-curator5.version}</version>
             <!-- 注意：这里是 pom 类型 -->
             <type>pom</type>
         </dependency>
@@ -59,7 +59,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>3.3.2</version>
+                <version>${spring-boot.version}</version>
             </plugin>
         </plugins>
     </build>

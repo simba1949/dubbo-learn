@@ -23,12 +23,22 @@
         <!-- 版本管理 -->
         <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-parent -->
         <spring-boot.version>3.3.2</spring-boot.version>
+
         <!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo -->
         <dubbo.version>3.2.14</dubbo.version>
+        <!-- https://mvnrepository.com/artifact/org.apache.curator/curator-x-discovery -->
+        <curator-x-discovery.version>5.7.0</curator-x-discovery.version>
+        <!-- https://mvnrepository.com/artifact/org.apache.zookeeper/zookeeper -->
+        <zookeeper.version>3.9.2</zookeeper.version>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+        <spring-context.version>6.1.11</spring-context.version>
+
         <!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo-spring-boot-starter -->
         <dubbo-spring-boot-starter.version>3.2.14</dubbo-spring-boot-starter.version>
         <!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo-dependencies-zookeeper-curator5 -->
         <dubbo-dependencies-zookeeper-curator5.version>3.2.14</dubbo-dependencies-zookeeper-curator5.version>
+        <!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo-registry-nacos -->
+        <dubbo-registry-nacos.version>3.2.14</dubbo-registry-nacos.version>
     </properties>
 
     <dependencies>

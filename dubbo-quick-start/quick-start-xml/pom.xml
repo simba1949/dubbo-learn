@@ -28,26 +28,26 @@
         <dependency>
             <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo</artifactId>
-            <version>3.2.14</version>
+            <version>${dubbo.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.curator/curator-x-discovery -->
         <dependency>
             <groupId>org.apache.curator</groupId>
             <artifactId>curator-x-discovery</artifactId>
-            <version>5.7.0</version>
+            <version>${curator-x-discovery.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.zookeeper/zookeeper -->
         <dependency>
             <groupId>org.apache.zookeeper</groupId>
             <artifactId>zookeeper</artifactId>
-            <version>3.9.2</version>
+            <version>${zookeeper.version}</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>6.1.11</version>
+            <version>${spring-context.version}</version>
         </dependency>
     </dependencies>
 </project>
