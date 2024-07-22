@@ -13,6 +13,7 @@
         <module>dubbo-all-facade</module>
         <module>dubbo-quick-start</module>
         <module>dubbo-integration-registration-center</module>
+        <module>dubbo-spi-extend</module>
     </modules>
 
     <properties>
