@@ -41,6 +41,11 @@
         <dubbo-dependencies-zookeeper-curator5.version>3.2.14</dubbo-dependencies-zookeeper-curator5.version>
         <!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo-registry-nacos -->
         <dubbo-registry-nacos.version>3.2.14</dubbo-registry-nacos.version>
+
+        <!-- https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator -->
+        <hibernate-validator.version>8.0.1.Final</hibernate-validator.version>
+        <!-- https://mvnrepository.com/artifact/org.glassfish.expressly/expressly -->
+        <expressly.version>5.0.0</expressly.version>
     </properties>
 
     <dependencies>
