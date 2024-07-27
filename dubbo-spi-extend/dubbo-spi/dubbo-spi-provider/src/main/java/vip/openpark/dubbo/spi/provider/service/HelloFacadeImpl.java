@@ -1,7 +1,7 @@
 package vip.openpark.dubbo.spi.provider.service;
 
 import org.apache.dubbo.config.annotation.DubboService;
-import vip.openpark.base.IHelloService;
+import vip.openpark.base.IHelloFacade;
 
 /**
  * 使用 {@link @DubboService(filter = "logFilter")} 指定使用的 filter
@@ -11,7 +11,7 @@ import vip.openpark.base.IHelloService;
  * @since 2024/7/25 10:23
  */
 @DubboService(group = "dubbo-spi-provider", version = "1.0.0", filter = "logFilter")
-public class HelloServiceImpl implements IHelloService {
+public class HelloFacadeImpl implements IHelloFacade {
     @Override
     public String hello(String name) {
         return "[dubbo-spi-provider] hello " + name;

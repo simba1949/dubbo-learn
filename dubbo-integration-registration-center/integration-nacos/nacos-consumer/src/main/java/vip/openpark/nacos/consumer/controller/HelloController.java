@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import vip.openpark.base.IHelloService;
+import vip.openpark.base.IHelloFacade;
 
 /**
  * @author anthony
@@ -17,7 +17,7 @@ import vip.openpark.base.IHelloService;
 public class HelloController {
 
 	@DubboReference(group = "nacos", version = "1.0.0")
-	private IHelloService helloService;
+	private IHelloFacade helloService;
 
 	@GetMapping("hello")
 	public String hello(@RequestParam("name") String name) {

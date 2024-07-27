@@ -4,8 +4,8 @@ import org.apache.dubbo.config.ProtocolConfig;
 import org.apache.dubbo.config.RegistryConfig;
 import org.apache.dubbo.config.ServiceConfig;
 import org.apache.dubbo.config.bootstrap.DubboBootstrap;
-import vip.openpark.base.IHelloService;
-import vip.openpark.quick.start.api.provider.service.HelloServiceImpl;
+import vip.openpark.base.IHelloFacade;
+import vip.openpark.quick.start.api.provider.service.HelloFacadeImpl;
 
 /**
  * @author anthony
@@ -15,9 +15,9 @@ import vip.openpark.quick.start.api.provider.service.HelloServiceImpl;
 public class QuickStartApiProviderApplication {
 	public static void main(String[] args) {
 		// 基于 ServiceConfig 定义了发布的服务信息，包括接口的信息以及对应的实现类对象;
-		ServiceConfig<IHelloService> serviceConfig = new ServiceConfig<>();
-		serviceConfig.setInterface(IHelloService.class); // 设置接口
-		serviceConfig.setRef(new HelloServiceImpl()); // 配置实现
+		ServiceConfig<IHelloFacade> serviceConfig = new ServiceConfig<>();
+		serviceConfig.setInterface(IHelloFacade.class); // 设置接口
+		serviceConfig.setRef(new HelloFacadeImpl()); // 配置实现
 
 		// 配置 Dubbo 启动器，传入了应用名，注册中心地址，协议的信息以及服务的信息等。
 		DubboBootstrap.getInstance()

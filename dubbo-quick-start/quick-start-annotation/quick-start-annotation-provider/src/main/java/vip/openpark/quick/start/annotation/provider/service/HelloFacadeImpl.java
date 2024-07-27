@@ -1,7 +1,7 @@
 package vip.openpark.quick.start.annotation.provider.service;
 
 import org.apache.dubbo.config.annotation.DubboService;
-import vip.openpark.base.IHelloService;
+import vip.openpark.base.IHelloFacade;
 
 /**
  * @author anthony
@@ -9,7 +9,7 @@ import vip.openpark.base.IHelloService;
  * @since 7/21/2024 3:40 PM
  */
 @DubboService
-public class HelloServiceImpl implements IHelloService {
+public class HelloFacadeImpl implements IHelloFacade {
 	@Override
 	public String hello(String name) {
 		return "[quick-start-annotation-provider] Hello, " + name;

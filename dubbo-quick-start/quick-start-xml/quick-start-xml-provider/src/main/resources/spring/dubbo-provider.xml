@@ -13,6 +13,6 @@
     <dubbo:registry address="zookeeper://192.168.0.111:2181"/>
 
     <!-- 服务实现类 -->
-    <bean id="helloService" class="vip.openpark.quick.start.xml.provider.service.HelloServiceImpl"/>
-    <dubbo:service interface="vip.openpark.base.IHelloService" ref="helloService"/>
+    <bean id="helloService" class="vip.openpark.quick.start.xml.provider.service.HelloFacadeImpl"/>
+    <dubbo:service interface="vip.openpark.base.IHelloFacade" ref="helloService"/>
 </beans>

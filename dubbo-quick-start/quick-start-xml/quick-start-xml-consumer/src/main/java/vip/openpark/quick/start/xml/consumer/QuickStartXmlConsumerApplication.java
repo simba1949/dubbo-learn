@@ -1,7 +1,7 @@
 package vip.openpark.quick.start.xml.consumer;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import vip.openpark.base.IHelloService;
+import vip.openpark.base.IHelloFacade;
 
 import java.util.Scanner;
 
@@ -17,7 +17,7 @@ public class QuickStartXmlConsumerApplication {
 
 		System.out.println("[基于 spring-context XML] 客户端启动完成");
 
-		IHelloService helloService = (IHelloService) context.getBean("helloService");
+		IHelloFacade helloService = (IHelloFacade) context.getBean("helloService");
 
 		Scanner scanner = new Scanner(System.in);
 		while (scanner.hasNextLine()) {

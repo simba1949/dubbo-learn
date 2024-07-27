@@ -12,5 +12,5 @@
     <!-- 注册中心地址 -->
     <dubbo:registry address="zookeeper://192.168.0.111:2181"/>
 
-    <dubbo:reference id="helloService" check="true" interface="vip.openpark.base.IHelloService"/>
+    <dubbo:reference id="helloService" check="true" interface="vip.openpark.base.IHelloFacade"/>
 </beans>
