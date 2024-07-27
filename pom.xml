@@ -14,6 +14,7 @@
         <module>dubbo-quick-start</module>
         <module>dubbo-integration-registration-center</module>
         <module>dubbo-spi-extend</module>
+        <module>dubbo-practice</module>
     </modules>
 
     <properties>
