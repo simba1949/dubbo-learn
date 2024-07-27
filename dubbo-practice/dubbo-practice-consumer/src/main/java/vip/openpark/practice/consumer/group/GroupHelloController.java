@@ -26,12 +26,21 @@ public class GroupHelloController {
     @DubboReference(group = "group-b")
     private IHelloFacade helloFacadeGroupB;
 
+    /**
+     * group = "*" 表示搜索所有的组，或者多个分组使用 "," 分割
+     */
+    @DubboReference(group = "*")
+    private IHelloFacade helloFacadeNoGroup;
+
     @GetMapping("hello")
     public String hello(@RequestParam("name") String name) {
         String resultA = helloFacadeGroupA.hello(name);
         log.info("resultA:{}", resultA);
         String resultB = helloFacadeGroupB.hello(name);
         log.info("resultB:{}", resultB);
+
+        String resultNoGroup = helloFacadeNoGroup.hello(name);
+        log.info("resultNoGroup:{}", resultNoGroup);
         return "SUCCESS";
     }
 
